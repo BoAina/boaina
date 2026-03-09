@@ -27,7 +27,7 @@ I build prototypes around:
 
 My core architecture pattern is:
 
-**AI reasoning → policy enforcement → authorization → ledger**
+**AI reasoning → policy enforcement → authorization → general ledger**
 
 ---
 
@@ -41,7 +41,7 @@ Modern spend systems move control **upstream**.
 
 The important question becomes:
 
-**Should this transaction happen at all?**
+**Should this transaction have happened at all?**
 
 That is where I focus: combining AI interpretation with deterministic financial controls.
 
