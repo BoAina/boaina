@@ -1,157 +1,191 @@
 # Bo Aina
 
-**Senior Solution Engineer · Oracle**
-Financial systems architect. AI governance practitioner. Builder of deterministic control planes for regulated environments.
+![AI Governance](https://img.shields.io/badge/Focus-AI%20Governance-6f42c1)  
+![Financial Infrastructure](https://img.shields.io/badge/Domain-Financial%20Infrastructure-0a66c2)  
+![Python](https://img.shields.io/badge/Build-Python-3776AB)
+
+**Senior Solution Engineer · Oracle**  
+Enterprise financial systems architect building AI workflow prototypes for regulated environments.
+
+I focus on a simple problem: **how AI can help before money moves, while policy, authorization, and auditability stay deterministic.**
 
 ---
 
-## Core Thesis
+## What I Build
 
-AI systems are probabilistic.
-Financial infrastructure is deterministic.
+I build prototypes around:
 
-Therefore AI must terminate into a deterministic control plane.
+- AI-assisted spend and procurement workflows
+    
+- policy-driven authorization patterns
+    
+- audit-ready decision artifacts
+    
+- ERP-connected financial automation for regulated environments
+    
 
-The movement of money cannot be governed by confidence intervals.
-It requires rules, audit trails, and repeatable decisions.
-That is the architectural problem I think about.
+My core architecture pattern is:
 
----
-
-## Architecture Pattern
-
-```mermaid
-flowchart TD
-    A[AI Agent Reasoning] --> B[Intent Schema]
-    B --> C[Policy Engine]
-    C --> D{Policy Decision}
-    D -->|Approved| E[Authorization Gateway]
-    D -->|Denied| F[Reject / Log Event]
-    E --> G[Financial System or API]
-    G --> H[Ledger Entry]
-    H --> I[Immutable Audit Log]
-```
-
-**AI reasons. Policy decides. Authorization executes. Ledger records.**
-
-This pattern holds whether the domain is corporate spend, grants management, procurement, or healthcare financial workflows. The AI layer interprets and classifies. The deterministic layer decides and records.
+**AI reasoning → policy enforcement → authorization → ledger**
 
 ---
 
-## Deterministic Boundary
+## Why This Matters
+
+In many enterprise finance workflows, control happens **after** the transaction:
+
+someone spends → the expense lands → approvals happen → the ledger records it
+
+Modern spend systems move control **upstream**.
+
+The important question becomes:
+
+**Should this transaction happen at all?**
+
+That is where I focus: combining AI interpretation with deterministic financial controls.
+
+---
+
+## Featured Architecture
 
 ```mermaid
 flowchart LR
-    A[Probabilistic AI Layer] --> B[Intent Extraction]
-    B --> C[Policy Evaluation]
-    C --> D[Deterministic Control Plane]
-    D --> E[Authorization]
-    E --> F[Financial Transaction]
-    F --> G[Ledger Record]
+    AI[AI Reasoning Layer] --> Intent[Intent Schema]
+    Intent --> Policy[Policy Engine]
+    Policy --> Decision{Policy Decision}
+    Decision -->|Approved| Auth[Authorization]
+    Auth --> Txn[Financial Transaction]
+    Txn --> Ledger[Ledger Record]
+    Decision -->|Rejected| Audit[Audit Log]
 ```
 
-The boundary between probabilistic and deterministic is not a limitation.
-It is an architectural feature. The AI does not need to authorize.
-It needs to be right about what the request actually is.
-The policy engine handles the rest.
+AI helps interpret the request. The deterministic layer decides, authorizes, and records.
 
 ---
 
-## Projects
+## Featured Prototypes
 
 ### [AI Spend Governance Control Plane](https://github.com/BoAina/ai-spend-governance-control-plane)
 
-Prototype showing how AI classification and deterministic policy enforcement work together in procurement and spend authorization workflows.
+Prototype showing how AI classification and deterministic policy enforcement can work together in procurement and spend authorization workflows.
 
-```mermaid
-flowchart TD
-    User[Employee Request] --> AI[AI Assistant]
-    AI --> Intent[Structured Intent]
-    Intent --> Policy[Policy Engine]
-    Policy --> Decision{Policy Outcome}
-    Decision -->|Approved| Auth[Authorization Gateway]
-    Auth --> Card[Virtual Card / Payment Authorization]
-    Card --> Ledger[Financial Ledger]
-    Decision -->|Rejected| Audit[Audit Log + Explanation]
-```
+**What it demonstrates**
 
 - AI-assisted spend classification
-- Deterministic policy gate with grant and procurement rules
-- Audit-ready decision artifacts
-- Mock ERP writeback on approval
-- Public sector scenarios including federal grant allowability (2 CFR 200)
+    
+- policy checks before approval
+    
+- audit-ready decision artifacts
+    
+- mock ERP writeback on approval
+    
+- regulated scenarios including grant-funded purchasing
+    
 
-> Procurement authorization prototype, AI-assisted classification, deterministic spend controls, and audit-ready decisions for grant-funded and regulated environments.
+**Use cases**
+
+- corporate procurement approval
+    
+- grant expense authorization
+    
+- healthcare purchasing controls
+    
+- public-sector compliance workflows
+    
+
+> A prototype for pre-spend controls: AI interprets the request, policy decides, and the system records the outcome.
 
 ---
 
 ### [Deterministic AI Control Plane](https://github.com/BoAina/deterministic-ai-control-plane)
 
-The generalized pattern behind the spend governance prototype. A control plane architecture for constraining AI agent behavior through deterministic rules - applicable wherever probabilistic outputs must be bounded by policy.
+A more general control-plane pattern for constraining AI behavior through deterministic rules wherever probabilistic outputs need policy boundaries.
 
-- Structured intent schemas
-- Policy evaluation layer
-- Replayable decision artifacts
-- Deterministic approval flows
-- Ledger-backed auditability
+**What it demonstrates**
 
-> AI interprets. Rules constrain. Policy gates. Action proceeds.
+- intent extraction
+    
+- policy evaluation
+    
+- approval / rejection routing
+    
+- replayable decision artifacts
+    
+- ledger-backed auditability
+    
 
----
-
-## Financial Infrastructure Perspective
-
-Enterprise finance typically follows a familiar sequence: someone spends, the transaction lands, approvals happen, and the ledger absorbs the truth after the fact.
-
-That sequence is changing. Control is moving upstream - closer to the moment a transaction is about to happen. Modern spend platforms have made authorization programmable. ERP systems are developing intelligence layers that can participate at authorization time rather than just reconciliation time.
-
-The question is no longer only: *Was this expense okay after it happened?*
-It is becoming: *Should this transaction happen at all?*
-
-That is the architectural shift. And it is where AI governance, financial systems, and real-time authorization infrastructure all converge.
+> A generalized pattern for governed AI systems operating in regulated environments.
 
 ---
 
-## Areas of Interest
+## What I Bring
 
-- AI governance in regulated financial environments
-- Deterministic vs. probabilistic system boundaries
-- Policy-driven AI agent architectures
-- Financial authorization infrastructure and real-time controls
-- ERP intelligence as an upstream authorization layer
-- Public sector AI systems - grants, procurement, compliance
-- Funds-aware authorization and pre-spend controls
-- Audit-ready AI decision artifacts
+- Enterprise financial systems experience across Oracle, Workday, and Tyler Technologies
+    
+- Experience in healthcare, grants, and regulated accounting environments
+    
+- Ability to translate business workflows into architecture, controls, and demo narratives
+    
+- Hands-on prototype building with Python, APIs, and structured AI workflows
+    
+- Strong interest in AI governance, financial infrastructure, and real-time authorization
+    
+
+---
+
+## Technical Focus
+
+Technologies and patterns used across prototypes:
+
+- Python
+    
+- OpenAI APIs
+    
+- structured outputs and schemas
+    
+- policy evaluation modules
+    
+- authorization routing
+    
+- ledger simulation and audit artifact design
+    
 
 ---
 
 ## Background
 
-Senior Solution Engineer at Oracle, focused on financial systems, grants, and healthcare implementations. Previous roles at Workday and Tyler Technologies.
+I work in enterprise financial systems and have spent much of my career around controls, approvals, grants, and systems of record.
 
-That background shapes how I think about AI: not as a replacement for financial infrastructure, but as an intelligence layer operating within it. ERP systems were built to absorb financial truth after the fact. The interesting question is what happens when AI and financial infrastructure cooperate before money moves.
+That background shapes how I think about AI.
 
-Working with grants management, budgetary controls, and regulated accounting environments naturally leads to thinking about AI operating inside those same boundaries - where every decision needs a rule, a reason, and an audit trail.
+Not as a replacement for financial infrastructure, but as an intelligence layer that can improve how decisions are interpreted before deterministic systems authorize and record them.
 
 ---
 
-## What I'm Currently Exploring
+## Current Focus
 
-- OpenAI APIs and structured AI outputs for financial workflows
-- Agent architectures with deterministic authorization gates
-- Financial authorization flows and real-time policy enforcement
-- AI governance patterns for enterprise deployment
-- Control plane design for AI agents in regulated industries
-- Funds-aware authorization at the intersection of spend platforms and ERP intelligence
+- AI-assisted financial workflows
+    
+- pre-spend authorization patterns
+    
+- policy-driven automation
+    
+- control-plane design for enterprise AI
+    
+- regulated AI deployment in finance and public-sector contexts
+    
 
 ---
 
 ## Connect
 
 - [LinkedIn](https://www.linkedin.com/in/boaina)
-- [Aina Labs](https://ainalabs.ai)
+    
+- [Aina Labs](https://ainalabs.ai/)
+    
 - [GitHub Projects](https://github.com/BoAina)
+    
 
 ---
 
-*The next generation of AI systems will not just generate answers — they will operate inside governed financial infrastructure.*
+_I’m especially interested in how AI can improve financial workflows without weakening policy, authorization, or auditability._
