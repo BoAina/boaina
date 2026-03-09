@@ -4,7 +4,7 @@
 ![Financial Infrastructure](https://img.shields.io/badge/Domain-Financial%20Infrastructure-0a66c2)
 ![Python](https://img.shields.io/badge/Python-3776AB)
 
-**Senior Solution Engineer · Oracle**
+**Senior Solution Engineer, Financials · Oracle**
 
 Enterprise financial systems architect building AI workflow prototypes for regulated environments.
 
