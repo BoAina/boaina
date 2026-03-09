@@ -129,27 +129,11 @@ A more general control-plane pattern for constraining AI behavior through determ
     
 - Hands-on prototype building with Python, APIs, and structured AI workflows
     
-- Strong interest in AI governance, financial infrastructure, and real-time authorization
+- Building toward AI governance, financial infrastructure, and real-time authorization
     
 
 ---
 
-## Technical Focus
-
-Technologies and patterns used across prototypes:
-
-- Python
-    
-- OpenAI APIs
-    
-- structured outputs and schemas
-    
-- policy evaluation modules
-    
-- authorization routing
-    
-- ledger simulation and audit artifact design
-    
 
 ---
 
@@ -159,7 +143,7 @@ I work in enterprise financial systems and have spent much of my career around c
 
 That background shapes how I think about AI.
 
-Not as a replacement for financial infrastructure, but as an intelligence layer that can improve how decisions are interpreted before deterministic systems authorize and record them.
+An intelligence layer that improves how decisions are interpreted before deterministic systems authorize and record them.
 
 ---
 
@@ -189,4 +173,4 @@ Not as a replacement for financial infrastructure, but as an intelligence layer 
 
 ---
 
-_I’m especially interested in how AI can improve financial workflows without weakening policy, authorization, or auditability._
+_The next generation of AI systems will not just generate answers - they will operate inside governed financial infrastructure._
