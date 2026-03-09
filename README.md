@@ -5,6 +5,7 @@
 ![Python](https://img.shields.io/badge/Build-Python-3776AB)
 
 **Senior Solution Engineer · Oracle**  
+
 Enterprise financial systems architect building AI workflow prototypes for regulated environments.
 
 I focus on a simple problem: **how AI can help before money moves, while policy, authorization, and auditability stay deterministic.**
