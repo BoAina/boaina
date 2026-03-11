@@ -14,7 +14,7 @@ I focus on a specific problem: **how AI can help before money moves, while polic
 
 ## What I Build
 
-- AI-assisted spend and procurement workflows
+- AI-assisted financial systems workflows - accounting automation, procurement and spend controls
 - policy-driven authorization patterns
 - audit-ready decision artifacts
 - ERP-connected financial automation for regulated environments
