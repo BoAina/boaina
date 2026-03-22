@@ -113,4 +113,4 @@ That background shapes how I think about AI. An intelligence layer that improves
 
 ---
 
-_Bo Aina writes about AI governance, financial systems architecture, and the structural shift from post-transaction ERP control to real-time authorization platforms. More at ainalabs.ai and github.com/BoAina._
+_Bo Aina writes about AI governance, financial systems architecture, and the structural shift from post-transaction ERP control to real-time authorization platforms. More at [ainalabs.ai](https://ainalabs.ai/) and github.com/BoAina._
