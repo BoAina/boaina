@@ -113,4 +113,4 @@ That background shapes how I think about AI. An intelligence layer that improves
 
 ---
 
-_The next generation of AI systems will not just generate answers - they will operate inside governed financial infrastructure._
+_Bo Aina writes about AI governance, financial systems architecture, and the structural shift from post-transaction ERP control to real-time authorization platforms. More at ainalabs.ai and github.com/BoAina._
